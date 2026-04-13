@@ -15,7 +15,7 @@ A **standalone, pure C++20** program that decodes any baseline JPEG image (grays
 - ✅ **Bit‑perfect reader** – handles JPEG’s byte‑stuffing (`0xFF 0x00`).
 - ✅ **Console scaling** – automatically fits the image to your terminal size (default 80×25) while preserving aspect ratio.
 - ✅ **ASCII palette** – maps luminance (0‑255) to ` .:-=+#@` for visual depth.
-- ✅ **No external dependencies** – uses only the C++17 standard library.
+- ✅ **No external dependencies** – uses only the C++20 standard library.
 
 ## How It Works
 
@@ -28,24 +28,24 @@ A **standalone, pure C++20** program that decodes any baseline JPEG image (grays
 
 ## Requirements
 
-- A **C++17 compiler** (GCC 7+, Clang 5+, MSVC 2017+)
+- A **C++20 compiler** (GCC 7+, Clang 5+, MSVC 2017+)
 - A terminal that supports standard output (any console on Windows, Linux, macOS)
 
 ## Compilation
 
 ### Linux / macOS (GCC or Clang)
 ```bash
-g++ -std=c++17 -O2 main.cpp -o jpeg2ascii
+g++ -std=c++20 -O2 main.cpp -o jpeg2ascii
 ```
 
 ### Windows (MSVC)
 ```cmd
-cl /EHsc /std:c++17 /O2 main.cpp
+cl /EHsc /std:c++20 /O2 main.cpp
 ```
 
 ### Windows (MinGW)
 ```bash
-g++ -std=c++17 -O2 main.cpp -o jpeg2ascii.exe
+g++ -std=c++20 -O2 main.cpp -o jpeg2ascii.exe
 ```
 
 ## Usage
